@@ -28,7 +28,7 @@ If you use this tool (in research, publications, pipelines, derivatives, or any 
 GitHub: [https://github.com/mosermd-bio/z-core](https://github.com/mosermd-bio/z-core)
 
 Example citation (for papers/posters/talks):
-> mosermd. (2026). Z-Core Design System. GitHub repository. https://github.com/mosermd-bio/z-core
+> Matt Moser. (2026). Z-Core Design System. GitHub repository. https://github.com/mosermd-bio/z-core
 
 Thanks for your support — happy to discuss collaborations or improvements!
 -Matt
