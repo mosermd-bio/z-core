@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Z-Core Style Guide</title>
+  <link rel="stylesheet" href="core.css">
+</head>
+<body>
+  <div class="page">
+    <h1>Z-Core Style Guide</h1>
+    <p class="subtitle">Shared design system for all tools. Dark-only retrofuturistic theme.</p>
+
+    <!-- Alert -->
+    <div class="alert mb-lg">
+      <p><strong>Alert Component</strong></p>
+      <p>This is the standard warning/info banner used across all tools.</p>
+    </div>
+
+    <!-- Panel with Buttons -->
+    <div class="panel">
+      <h2>Buttons</h2>
+      <div class="flex-row flex-wrap mt-md">
+        <button class="btn btn-accent">Accent</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-danger">Danger</button>
+        <button class="btn btn-violet">Violet</button>
+        <button class="btn btn-muted">Muted</button>
+        <button class="btn btn-link">Link Style</button>
+      </div>
+      <h3 class="mt-lg">Sizes</h3>
+      <div class="flex-row flex-wrap mt-md">
+        <button class="btn btn-accent btn-sm">Small</button>
+        <button class="btn btn-accent">Default</button>
+        <button class="btn btn-accent btn-lg">Large</button>
+      </div>
+    </div>
+
+    <!-- Panel with Form Elements -->
+    <div class="panel">
+      <h2>Form Elements</h2>
+      <div class="grid-2 mt-md">
+        <div>
+          <label>Text Input</label>
+          <input type="text" placeholder="Type something...">
+        </div>
+        <div>
+          <label>Number Input</label>
+          <input type="number" value="-4" step="1">
+        </div>
+      </div>
+      <label class="mt-lg">Textarea</label>
+      <textarea rows="3" placeholder="Multi-line input..."></textarea>
+      <label class="mt-lg">Select</label>
+      <select>
+        <option>Option A</option>
+        <option>Option B</option>
+        <option>Option C</option>
+      </select>
+      <label class="mt-lg">File Input</label>
+      <input type="file" accept=".txt">
+    </div>
+
+    <!-- Panel with Typography -->
+    <div class="panel">
+      <h2>Typography</h2>
+      <div class="prose mt-md">
+        <p>This is a paragraph in a <code>.prose</code> container. It has comfortable line-height for reading longer text blocks.</p>
+        <p class="text-sm text-dim">Small dimmed text for secondary information, disclaimers, and metadata.</p>
+      </div>
+      <div class="flex-row mt-lg">
+        <span class="text-xs text-dim">text-xs</span>
+        <span class="text-sm">text-sm</span>
+        <span>default</span>
+        <span class="text-lg">text-lg</span>
+        <span class="mono">monospace</span>
+      </div>
+    </div>
+
+    <!-- Panel with Table -->
+    <div class="panel">
+      <h2>Table</h2>
+      <div class="overflow-x mt-md">
+        <table>
+          <thead>
+            <tr><th>rsID</th><th>Locus</th><th>Effect</th><th>Score</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="mono">rs4988235</td><td>LCT</td><td>Lactase persistence</td><td class="text-center">0.42</td></tr>
+            <tr><td class="mono">rs4556017</td><td>MUC12</td><td>Coprobacillus link</td><td class="text-center">0.31</td></tr>
+            <tr><td class="mono">rs601338</td><td>FUT2</td><td>Non-secretor</td><td class="text-center">0.55</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Stat Grid -->
+    <div class="panel">
+      <h2>Stat Grid</h2>
+      <div class="stat-grid mt-md">
+        <div><div class="stat-value stat-green">1274</div><div class="stat-label">Score</div></div>
+        <div><div class="stat-value stat-blue">98.4</div><div class="stat-label">% Identity</div></div>
+        <div><div class="stat-value stat-amber">99.1</div><div class="stat-label">% Similarity</div></div>
+        <div><div class="stat-value stat-purple">12</div><div class="stat-label">Gaps</div></div>
+      </div>
+    </div>
+
+    <!-- Substitution Colors -->
+    <div class="panel">
+      <h2>Substitution Colors</h2>
+      <div class="flex-row flex-wrap mt-md">
+        <span class="sub-conservative" style="padding:0.25rem 0.5rem; border-radius:4px;">Conservative</span>
+        <span class="sub-neutral" style="padding:0.25rem 0.5rem; border-radius:4px;">Neutral</span>
+        <span class="sub-noncons" style="padding:0.25rem 0.5rem; border-radius:4px;">Non-conservative</span>
+        <span class="sub-gap" style="padding:0.25rem 0.5rem; border-radius:4px;">Gap</span>
+      </div>
+    </div>
+
+    <!-- History Item -->
+    <div class="panel">
+      <h2>History Item</h2>
+      <div class="history-item mt-md">
+        <div class="mono text-sm">MFVFLVLL... vs MFVFLVLL...</div>
+        <div class="text-right">
+          <div class="font-bold stat-green">1274</div>
+          <div class="text-xs text-dim">98.4% id</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Disclaimer Tooltip -->
+    <div class="panel">
+      <h2>Disclaimer Tooltip</h2>
+      <p class="mt-md">
+        Hover over the info icon to see the tooltip
+        <span class="disclaimer-wrap" tabindex="0">
+          <span class="disclaimer-icon" aria-label="Disclaimer">i</span>
+          <span class="disclaimer-tip">
+            <strong>Example Disclaimer</strong>
+            This is a tooltip with important context. It adjusts to viewport width on mobile devices.
+          </span>
+        </span>
+      </p>
+    </div>
+
+    <!-- Collapsible References -->
+    <details class="references">
+      <summary>References</summary>
+      <div class="references-body">
+        <ol>
+          <li>
+            <span class="ref-authors">Example Author et al.</span>
+            <span class="ref-title">An example reference title.</span>
+            <span class="ref-journal">Nature.</span>
+            <span class="ref-detail">2026;650:450-458.</span>
+            <span class="ref-doi">doi:<a href="#">10.1038/example</a></span>
+          </li>
+        </ol>
+      </div>
+    </details>
+
+    <!-- Simple Reference Links -->
+    <div class="references-links">
+      <h3>Reference Links</h3>
+      <a href="#">Example Paper Title. <em>Journal Name</em>.</a>
+      <a href="#">Another Paper Title. <em>Journal Name</em>.</a>
+    </div>
+
+    <div class="footer">Z-Core Design System</div>
+  </div>
+</body>
+</html>
